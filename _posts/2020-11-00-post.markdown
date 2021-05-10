@@ -1,14 +1,9 @@
 ---
-title : Git이 되기 위한 Git 공부
-category : Git
-tag : 
-- Git
-author_profile : true
-header :
-    teaser :
-    overlay_image : 
+layout: post
+title:  "Git"
+date:   2021-02-27 17:05:06 +0900
+categories: jekyll update
 ---
-
 ## Git이란?
 깃은 **버전관리 시스템**이다.
 *버전관리?* 여기서 부터 거부감이 들 수 있다.
