@@ -1,9 +1,12 @@
-layout: post
-title:  "스크랩"
-date:   2021-01-01 23:59:59 +0900
-categories: Scrap
-
 ---
+title: 스크랩
+author: Hyejin
+date: 2021-01-01
+category: scrap
+layout: post
+---
+
+
 
 ```text
 1. 사업성 어필

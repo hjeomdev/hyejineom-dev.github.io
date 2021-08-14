@@ -1,8 +1,9 @@
 ---
+title: 2020년 12월 TIL
+author: Hyejin
+date: 2020-12-01
+category: TIL
 layout: post
-title:  "2020년 12월"
-date:   2020-12-01 17:05:06 +0900
-categories: TIL
 ---
 
 # 2020-12-06
@@ -60,6 +61,7 @@ Hbase
 * 레퍼런스 카운트 0: 객체 해제
     객체 해제 시 자동 호출되는 함수: deinit {...}
     
+
 **강한 참조**
 * 객체를 소유하는 포인터
 1. 지역변수
@@ -369,7 +371,6 @@ Maven
     1. Clean : 빌드 시 생성되었던 Output을 지워준다.
     2. Default(Build) : 일반적인 빌드 프로세스를 위한 모델이다.
     3. Site : 프로젝트 문서와 사이트 작성을 수행한다.
-
 
 
 
