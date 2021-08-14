@@ -1,0 +1,181 @@
+---
+layout: post
+title:  "Git"
+date:   2020-11-01 17:05:06 +0900
+categories: TIL
+---
+## Git이란?
+깃은 **버전관리 시스템**이다.
+*버전관리?* 여기서 부터 거부감이 들 수 있다.
+다들 자소서 작성한 경험이 있을테니 자소서에 빗대어 말해보겠다.
+자소서를 작성할 때, 수없이 퇴고한다.
+어젯밤 새벽감성에 작성한 문장들이 오늘은 마음에 안들어서, 어제 작성한 부분을 모두 지우고 새롭게 작성했다.
+이성적이고 객관적이게.
+근데 쓰다보니 이것도 아니다.
+어제 작성한 버전이 그나마 나았다는 걸 깨닫게 된다.
+급히 ctrl+z를 눌러봤으나 어제의 것은 이미 사라지고 난 뒤다.
+
+이런 상황을 대비하기 위해서 우리는 어떻게 해야할까?
+
+중요한 포인트에서 저장할 때마다 파일을 복사해두어서 따로 저장해야한다.
+퇴고하기 전에, 그 파일을 복사해서 따로 관리하는 것이다.
+그럼 퇴고할 때마다 파일이 하나씩 늘어날 것이다.
+확실히 기억해 두기 위해서 겨우 몇줄 수정한 경우에도 복사해 두어야한다.
+메모리 용량이 미어넘쳐도 창작의 불꽃을 피우는 것보단 쉬우리라.
+
+하지만 깃을 이용한다면 이런 귀찮은 일들을 단 몇줄로 해결할 수 있다.
+
+중요한 포인트에서 저장한 파일들을 각각 새로운 버전이라고 생각하면, **버전관리 시스템**이라는 말이 이해가 될 것이다.
+
+예를 들어, '나는 깃입니다.'라고 저장한 것을 **버전1**이라고 생각하고,
+그리고 '나는 깃입니다. 그리고 버전관리시스템입니다'라고 수정해서 저장한 것을 **버전2**이라고 하면서 저장한다면, 깃 파일에 두 버전이 모두 저장되어있고 깃을 이용해서 언제든지 **버전1**, **버전2**를 확인할 수 있다.
+
+---
+
+## Git 저장과 기본 명령어
+#### Git 시작
+```shell
+git init
+```
+
+```shell
+git config 
+
+```
+
+```shell
+
+```
+#### Git 저장 위치 (저장소: Repository, Repo)
+**1. 로컬**
+**2. 원격**
+#### Git 저장 과정
+**1. Only 로컬**
+```mermaid
+graph LR
+    WorkingDirectory--git add-->StagingArea
+    StagingArea--git reset-->WorkingDirectory
+    StagingArea--git commit-->LocalRepo
+    LocalRepo--git reset-->WorkingDirectory
+```
+**2. 원격**
+```mermaid
+graph LR
+    LocalRepo--git push-->RemoteRepo
+    RemoteRepo--git fetch-->LocalRepo
+```
+
+**3. 로컬 + 원격**
+```mermaid
+graph LR
+    WorkingDirectory--git add-->StagingArea
+    StagingArea--git reset-->WorkingDirectory
+    StagingArea--git commit-->LocalRepo
+    LocalRepo--git reset-->WorkingDirectory
+    LocalRepo--git push-->RemoteRepo
+    RemoteRepo--git fetch-->LocalRepo
+```
+
+---
+## Git 브랜치
+
+---
+## Git 머지
+
+---
+
+## Git 기타 명령어
+#### 가장 많이 사용하는 명령어
+- 깃 상태. 어떤 파일이 어느 상태인지 알 수 있음.
+```shell
+git status
+```
+- 깃 커밋한 내역
+```shell
+git log
+```
+- 원격저장소 정보
+```shell
+git remote -v
+```
+
+#### 알아두면 쓸모있는 명령어
+```shell
+git config alias.adog "log --all --decorate --oneline --graph"
+```
+- `git adog`실행 시 `git log --all --decorate --oneline --graph`가 실행된다.
+
+
+```shell
+git history
+```
+- 그동안 실행한 git 명령어 출력
+#### 
+```shell
+
+```
+---
+## GitHub Fork
+
+
+
+
+
+```text
+git init
+
+git config —global [user.name](http://user.name) "yazbyz"
+
+git config —global [user.email](http://user.email) "yazbyz@gmail.com"
+
+git status
+
+git add -A
+
+git commit -m "메세지"
+
+git log
+
+git reset (커밋 일련번호) —hard
+
+git revert (커밋 일련번호)
+
+git branch (브랜치이름)
+
+git branch
+
+git branch -a
+
+git checkout (다른 브랜치 이름)
+
+git checkout -b (브랜치 이름)
+
+git merge (합칠 다른 브랜치 이름)
+
+git log —graph —all —decorate
+
+git rebase (브랜치 이름)
+
+git branch -D (브랜치 이름)
+
+git remote
+
+git remote add origin (깃허브 주소)
+
+git push -u origin master
+
+git add .
+
+git push origin mater
+
+.gitignore 파일에 파일이름을 넣으면 깃에 올라가지 않음
+
+git clone (깃허브 주소)
+
+git fetch
+
+git status
+
+git
+```
+
