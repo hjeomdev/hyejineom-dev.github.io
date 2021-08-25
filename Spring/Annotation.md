@@ -16,6 +16,12 @@
 
 ### @RequestBody
 
+### @RequestParam
+
+### @PathVariable
+
+
+
 
 
 ### @Getter
@@ -27,6 +33,16 @@
 ### @RequiredArgsConstructor
 
 ### @AllArgsConstructor
+
+### @Column
+
+| Property | Description                              | Default | Other annotations w/ Similiar Function |
+| -------- | ---------------------------------------- | ------- | -------------------------------------- |
+| name     | DB 상 이름을 명시하여 변수와 연결되게 함 |         |                                        |
+| nullable | null 가능 여부                           | true    | @NotNull                               |
+|          |                                          |         |                                        |
+|          |                                          |         |                                        |
+|          |                                          |         |                                        |
 
 
 
