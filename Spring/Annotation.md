@@ -44,6 +44,18 @@
 |          |                                          |         |                                        |
 |          |                                          |         |                                        |
 
+### [@JsonFormat](https://www.javadoc.io/doc/com.fasterxml.jackson.core/jackson-annotations/2.9.8/com/fasterxml/jackson/annotation/JsonFormat.html)
+
+| Property | Description | Default | Other annotaion w/ Similiar Function |
+| -------- | ----------- | ------- | ------------------------------------ |
+| lenient  |             |         |                                      |
+| locale   |             |         |                                      |
+| pattern  |             |         |                                      |
+| shape    |             |         |                                      |
+| timezone |             |         |                                      |
+| with     |             |         |                                      |
+| without  |             |         |                                      |
+
 
 
 ### @Modifying
