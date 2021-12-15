@@ -59,7 +59,7 @@ npm i nodemon -D
 **바벨 설치**
 
 ```shell
-npm i @babel/core @babel/cli @babel/node -D
+npm i @babel/core @babel/cli @babel/node @babel/preset-env -D
 ```
 
 
